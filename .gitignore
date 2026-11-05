@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local app data (personas.json is seed data and stays tracked)
+backend/data/conversations.json
+backend/data/*.tmp
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.log
