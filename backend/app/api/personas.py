@@ -2,7 +2,7 @@ from uuid import UUID
 
 from fastapi import APIRouter, status
 
-from app.api.deps import PersonaRepo
+from app.api.deps import ConversationRepo, PersonaRepo
 from app.core.responses import ApiResponse
 from app.schemas.persona import Persona, PersonaCreate
 
@@ -28,5 +28,8 @@ def get_persona(persona_id: UUID, repo: PersonaRepo) -> ApiResponse[Persona]:
 
 
 @router.delete("/{persona_id}", status_code=status.HTTP_204_NO_CONTENT)
-def delete_persona(persona_id: UUID, repo: PersonaRepo) -> None:
+def delete_persona(
+    persona_id: UUID, repo: PersonaRepo, conversations: ConversationRepo
+) -> None:
     repo.delete(persona_id)
+    conversations.delete_for_persona(persona_id)
