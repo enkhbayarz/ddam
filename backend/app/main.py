@@ -2,7 +2,7 @@ import logging
 
 from fastapi import FastAPI
 
-from app.api import health
+from app.api import health, personas
 from app.core.config import get_settings
 from app.core.errors import register_error_handlers
 from app.core.middleware import register_middleware
@@ -17,6 +17,7 @@ def create_app() -> FastAPI:
     register_middleware(app, settings)
     register_error_handlers(app)
     app.include_router(health.router, prefix="/api")
+    app.include_router(personas.router, prefix="/api")
 
     return app
 
