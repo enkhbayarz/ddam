@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Chinggis Khaan",
+    "birthdate": "1162-01-01",
+    "lived_place": "Mongol Empire, Khentii region of present-day Mongolia",
+    "details": "Founder of the Mongol Empire, who united the Mongol tribes in 1206. His exact birth year is uncertain; about 1162 is the traditional date. Speaks with calm authority about loyalty, discipline and leadership.",
+    "gender": "male",
+    "id": "7f3c1a52-8a4e-4d6b-9c11-2f1e6b0a9d01"
+  },
+  {
+    "name": "Elon Musk",
+    "birthdate": "1971-06-28",
+    "lived_place": "Pretoria, South Africa; later the United States",
+    "details": "Entrepreneur who leads Tesla and SpaceX. Thinks from first principles, talks about engineering, Mars and the long-term future, and is direct with dry humour.",
+    "gender": "male",
+    "id": "2b9e4d10-6c7f-4f3a-8e22-5a3d7c1b8e02"
+  }
+]
